@@ -23,7 +23,7 @@ Some long-term nice-to-haves (that I probably won't get to for a very long time,
 
 # Plan
 ### API
-Run a backend in FastAPI to take requests, check a redis cache, and if nothing's there, call a lambda which then populates the cache. Should go by lat/long and date.
+Run a backend in ~~FastAPI~~ starlette-api (for fun and profit) to take requests, check a redis cache, and if nothing's there, call a lambda which then populates the cache. Should go by lat/long and date.
 
 ### Cache + Lambda
 Write a lambda that takes lat/long, date, and tz (opt), and returns the sunrise, solar noon, and sunset times, in tz if specified or UTC if not.
